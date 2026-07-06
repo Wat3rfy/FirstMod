@@ -21,10 +21,11 @@ public class ModItems {
 
     private static Item registerItem(String name, Function<Item.Properties, Item> function){
 
-        ResourceKey<Item> key = ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(TutorialMod.MOD_ID, name));
+        Identifier itemId = Identifier.fromNamespaceAndPath(TutorialMod.MOD_ID, name);
+        ResourceKey<Item> key = ResourceKey.create(Registries.ITEM, itemId);
         return Registry.register(
                 BuiltInRegistries.ITEM,
-                Identifier.fromNamespaceAndPath(TutorialMod.MOD_ID, name),
+                itemId,
                 function.apply(new Item.Properties().setId(key)));
 
 
