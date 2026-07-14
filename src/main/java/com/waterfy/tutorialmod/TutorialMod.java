@@ -1,5 +1,6 @@
 package com.waterfy.tutorialmod;
 
+import com.waterfy.tutorialmod.block.ModBlocks;
 import com.waterfy.tutorialmod.creativemodetabs.ModCreativeModeTabs;
 import com.waterfy.tutorialmod.item.ModItems;
 import net.fabricmc.api.ModInitializer;
@@ -16,5 +17,6 @@ public class TutorialMod implements ModInitializer {
 		LOGGER.info("Hello Fabric world!");
 		ModItems.registerModItems();
 		ModCreativeModeTabs.registerModeCreativeModeTabs();
+		ModBlocks.registerModBlocks();
 	}
 }

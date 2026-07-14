@@ -9,6 +9,6 @@ public class TutorialModDataGenerator implements DataGeneratorEntrypoint {
 	public void onInitializeDataGenerator(FabricDataGenerator fabricDataGenerator) {
 	var pack = fabricDataGenerator.createPack();
 
-	pack.addProvider((ModModelProvider::new));
+	pack.addProvider(ModModelProvider::new);
 	}
 }

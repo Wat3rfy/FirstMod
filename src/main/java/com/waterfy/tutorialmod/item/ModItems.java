@@ -27,8 +27,6 @@ public class ModItems {
                 BuiltInRegistries.ITEM,
                 itemId,
                 function.apply(new Item.Properties().setId(key)));
-
-
     }
 
 
@@ -37,12 +35,11 @@ public class ModItems {
 
         TutorialMod.LOGGER.info("Registering ModItems for " + TutorialMod.MOD_ID);
 
+        // CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS) will give subscribe us to the event
         CreativeModeTabEvents.modifyOutputEvent(CreativeModeTabs.INGREDIENTS).register(
-                output -> {
-                    output.accept((FLUORITE));
-                    output.accept(RAW_FLUORITE);});
-
-
+            output -> {
+                output.accept(FLUORITE);
+                output.accept(RAW_FLUORITE);});
     }
 
 }

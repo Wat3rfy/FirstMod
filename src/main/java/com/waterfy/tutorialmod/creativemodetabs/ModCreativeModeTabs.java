@@ -21,7 +21,6 @@ public class ModCreativeModeTabs {
             FabricCreativeModeTab.builder()
                     .icon(() -> new ItemStack(ModItems.FLUORITE))
                     .title(Component.translatable("creativemodetab.tutorialmod.fluorite_items"))
-                    
                     .displayItems((parameters, output) -> {
                         output.accept(ModItems.FLUORITE);
                         output.accept(ModItems.RAW_FLUORITE);
@@ -41,8 +40,6 @@ public class ModCreativeModeTabs {
 
     public static void registerModeCreativeModeTabs(){
         TutorialMod.LOGGER.info("Registering Creative Mode Tabs for " + TutorialMod.MOD_ID);
-
-
     }
 
 }
