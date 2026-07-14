@@ -1,0 +1,10 @@
+{
+  "values": [
+    "tutorial_mod:fluorite_block",
+    "tutorial_mod:fluorite_ore",
+    "tutorial_mod:fluorite_deepslate_ore",
+    "tutorial_mod:fluorite_nether_ore",
+    "tutorial_mod:fluorite_end_ore",
+    "tutorial_mod:raw_fluorite_block"
+  ]
+}
